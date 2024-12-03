@@ -1,13 +1,10 @@
 import Avatar from "./Avatar.jsx";
-
 import {useDispatch, useSelector} from "react-redux";
 import {changeStats} from "../actions/userAction.js";
 
 const Stats = () => {
-
     const {user, stats} = useSelector(state => state);
     const dispatch = useDispatch();
-
     return (
         <div className={'user-stats'}>
             <div>
