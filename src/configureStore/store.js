@@ -1,5 +1,5 @@
-import {twitterReducer} from "../reducers/twitterReducer.js";
 import {legacy_createStore as createStore} from "redux";
+import {rootReducer} from "../reducers/rootReduser.js";
 
 const initialState = {
     user: {
@@ -12,4 +12,4 @@ const initialState = {
     }
 }
 
-export const store = createStore(twitterReducer, initialState);
+export const store = createStore(rootReducer, initialState);
